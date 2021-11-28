@@ -62,8 +62,9 @@ def plot_outcome(num):
     ax1.plot(round, w_switch, linestyle='', marker='o', markersize='5', color='blue')
     ax1.plot(0, 0, linestyle='', marker='o', markersize='5', color='white')
 
-    print(f'Probability to win with switching: {w_switch[-1] / num * 100:.2f} %')
-    print(f'Probability to win with staying  : {w_stay[-1] / num * 100:.2f} %')
+    print(f'\nProbability to win:')
+    print(f'- with switching: {w_switch[-1] / num * 100:.2f} %')
+    print(f'- with staying  : {w_stay[-1] / num * 100:.2f} %')
 
     return 0
 
